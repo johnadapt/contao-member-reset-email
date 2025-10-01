@@ -1,0 +1,33 @@
+{
+  "name": "bright-cloud-studio/contao-member-reset-email",
+  "description": "Contao backend module to send member password reset emails (list, bulk, individual).",
+  "type": "contao-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bright Cloud Studio",
+      "email": "info@brightcloudstudio.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "contao/core-bundle": "^5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bcs\\MemberReset\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/dca/",
+      "src/Resources/contao/languages/",
+      "src/Resources/contao/templates/"
+    ]
+  },
+  "extra": {
+    "contao-manager-plugin": "Bcs\\MemberReset\\ContaoManager\\Plugin"
+  }
+}

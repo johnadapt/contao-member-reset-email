@@ -1,0 +1,3 @@
+<div class="tl_formbody_submit">
+    <button type="submit" name="resetpw" class="tl_submit">Send reset password email</button>
+</div>
